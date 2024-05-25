@@ -16,7 +16,7 @@
     <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
   
-<distributionManagement>
+<!-- <distributionManagement>
 <repository>
     <id>releases</id>
     <!-- CHANGE HERE by your team nexus server -->
@@ -27,7 +27,15 @@
     <!-- CHANGE HERE by your team nexus server -->
     <url>http://3.84.4.116:8081/repository/maven-snapshots/</url>
    </snapshotRepository>
-</distributionManagement>
+</distributionManagement> -->
+
+  <distributionManagement> 
+ <repository> 
+     <id>internal.repo</id> 
+     <name>Internal repo</name> 
+     <url>file:///var/lib/jenkins/DeepaksLocalRepo/</url> 
+   </repository> 
+ </distributionManagement>
 
   <dependencies>
     <dependency>
